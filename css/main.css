@@ -697,7 +697,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 20px 44px;
+  padding: 20px 35px;
   background-color: #fff;
 }
 .header-left {
@@ -801,13 +801,16 @@ html {
   margin-top: 40px;
 }
 
+.banner2 {
+  padding: 0 35px;
+}
+
 .banner2 .slick-slide {
   background-color: #b32532;
   color: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*   transform: scale(0.8); */
   transition: all 0.4s ease-in-out;
 }
 
@@ -817,7 +820,6 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-/* Active center slide (You can change anything here for cenetr slide)*/
 .banner2 .slick-center,
 .banner2 .slick-slide[aria-hidden=true]:not([tabindex="-1"]) + .slick-cloned[aria-hidden=true] {
   transform: scale(1.1);
@@ -838,6 +840,131 @@ html {
   font-size: 26px;
 }
 
+.products-seemore {
+  text-align: center;
+  margin: 30px 0;
+}
+.products-seemore a {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 3px 10px;
+}
+.products-flex {
+  display: flex;
+  padding: 0 35px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.products-box {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  max-width: 260px;
+}
+.products-box img {
+  width: 100%;
+}
+.products-box-all {
+  text-align: center;
+}
+.products-box-name span {
+  font-weight: 300;
+  font-size: 16px;
+}
+.products-box-price span {
+  color: #790000;
+  font-size: 16px;
+}
+.products-index-menu {
+  margin: 50px 0;
+}
+.products-index-menu-other {
+  font-weight: bold;
+}
+.products-index-menu-line {
+  border: 0.5px solid #790000;
+  width: 70%;
+  margin: 0 auto;
+}
+.products-index-menu ul {
+  list-style: none;
+  padding: 0 35px;
+  display: flex;
+  justify-content: center;
+  gap: 0 50px;
+}
+.products-index-menu ul li span {
+  font-size: 16px;
+}
+
+.about {
+  padding: 35px;
+  background: rgba(249, 232, 255, 0.5);
+  position: relative;
+  margin-top: 50px;
+}
+.about-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 0 30px;
+}
+.about-text h2 {
+  margin: 0;
+  font-size: 32px;
+}
+.about-brand {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about-form {
+  padding: 40px;
+  align-items: center;
+}
+.about-form-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-form-line {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.about-form-btn {
+  transform: translateY(-20%);
+}
+.about-form-btn button {
+  color: #fff;
+  background: #790000;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.about-form-all {
+  max-width: 300px;
+  width: 100%;
+}
+.about-form-all input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 100%;
+  background: rgba(249, 232, 255, 0.1);
+}
+.about-form-all input::placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -846,6 +973,20 @@ html {
 a {
   color: #000;
   text-decoration: unset;
+}
+
+.footer {
+  background-color: #000;
+}
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  text-align: center;
+}
+.footer-menu-list span {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

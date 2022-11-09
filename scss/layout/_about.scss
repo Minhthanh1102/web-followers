@@ -1,0 +1,68 @@
+.about{
+    padding: 35px;
+    background: rgba(249, 232, 255, 0.5);
+    position: relative;
+    margin-top: 50px;
+    &-text{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #FFFFFF;
+        border-radius: 30px;
+        padding: 0 30px;
+        h2{
+            margin: 0;
+            font-size: 32px;
+        }
+    }
+    &-brand{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &-form{
+        padding: 40px;
+        align-items: center;
+        &-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-line{
+            background: rgba(0, 0, 0, 0.3);
+            border: 0.5px solid rgba(0, 0, 0, 0.3);
+        }
+        &-btn{
+            transform: translateY(-20%);
+            button{
+                color: #fff;
+                background: #790000;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                padding: 10px 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        &-all{
+            max-width: 300px;
+            width: 100%;
+
+            input{
+                border: none;
+                outline: none;
+                padding-left: 10px;
+                font-size: 16px;
+                width: 100%;
+                background: rgba(249, 232, 255, 0.1);
+            }
+            input::placeholder{
+                font-style: italic;
+                font-size: 16px;
+            }
+        }
+    }
+}

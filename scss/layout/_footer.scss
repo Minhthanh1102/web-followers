@@ -1,3 +1,18 @@
 .footer {
+    background-color: #000;
+    &-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-logo{
+        text-align: center;
+    }
+    &-menu{
+        &-list{
+            span{
+                color: #fff;
+            }
+        }
+    }
 }
 

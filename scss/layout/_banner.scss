@@ -41,31 +41,15 @@
         
     }
 }
-// .slick-center{
-//     img{
-//         // width: 450px !important;
-//         // width: 450px;
-//         // height: 150px;
-//     }
-// }
-// .slick-slide{
-//     opacity: 0.4;
-// }
-// .slick-center { 
-//     // transform: scale(1.08);
-//     height: 270px;
-//     opacity: 1;
-//     z-index: 1;
-//   }
+.banner2{
+  padding: 0 35px;
+}
 .banner2 .slick-slide{
     background-color: #b32532;
     color: #FFF;
-    // height: 200px;
-    // margin: 0 15px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-  /*   transform: scale(0.8); */
     transition: all 0.4s ease-in-out;
   }
   .banner2 .slick-slide,
@@ -74,7 +58,6 @@
     transition: all 0.4s ease-in-out;
   }
   
-  /* Active center slide (You can change anything here for cenetr slide)*/
   .banner2 .slick-center,
   .banner2 .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
     transform: scale(1.1);
@@ -89,10 +72,8 @@
     z-index: 5;
   }
   .slick-next{
-    // right: 15px;
   }
   .slick-prev{
-    // left: 15px;
   }
   .slick-next:before, .slick-prev:before{
     color: #000;
