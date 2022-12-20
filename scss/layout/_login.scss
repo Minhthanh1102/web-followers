@@ -1,0 +1,425 @@
+.loginform{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    &-bg{
+        img{
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+.overview2{
+    height: 800px !important;
+}
+.overview{
+    position: relative;
+    // height: 100vh;
+    width: 75%;
+    height: 500px;
+    // background-color: #fff;
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.7));
+    box-shadow: #333;
+    border-radius: 36px;
+    height: 800px;
+    @include mobile{
+        // margin: 0;
+        margin-top: 0;
+        
+    }
+    &-bg{
+        position: relative;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 800px;
+        }
+    }
+    &-bg2{
+        height: 800px;
+    }
+}
+.cricle{
+    // transform: translateY(163px);
+    // margin-top: 160px;
+    // transform: translateY(134px);
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 12px;
+    @include mobile{
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 3vmin;
+    }
+    a{
+        font-size: 12px;
+        color: #000000;
+        @include tablet{
+            font-size: 2vmin;
+        }
+    }
+    span{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+.form-signup{
+    transform: translate(-50%, -35%) !important;
+}
+.form2{
+    height: 700px !important;
+}
+.form{
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    padding: 0;
+    background-color: #ffff;
+    border-radius: 8px;
+    max-width: 550px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 35px;
+    height: 700px;
+    text-align: center;
+    &-contact{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        &-icon{
+            span{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+    @include mobile{
+        // top: 35%;
+        width: 90%;
+    }
+    &_head{
+        // margin-bottom: 20px;
+        text-align: center;
+    }
+    &_title{
+        // margin-bottom: 10px;
+        // font-weight: 600;
+        font-size: 32px;
+        color: #fff;
+    }
+}
+.input{
+    margin-bottom: 30px;
+    position: relative;
+    ::placeholder{
+        color: #fff;
+        opacity: 0.2;
+    }
+    &-select{
+        width: 440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        select{
+            width: 47%;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            height: 50px;
+            border: none;
+            color: rgb(102, 101, 101);
+            padding: 0 10px;
+        }
+    }
+    &-mail{
+        position: absolute;
+        top: 50%;
+        right: 22%;
+        transform: translateY(-50%);
+    }
+    h5{
+        margin: 0;
+    }
+    &_title{
+        padding: 0 5px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+    
+        color: #000000;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        transform: translateY(-50%);
+        background: #fff;
+        span{
+            color: red;
+        }
+    }
+    &_text{
+        width: 330px;
+        height: 50px;
+        // width: 100%;
+        padding: 0px 15px;
+        color: #fff;
+        outline: none;
+        border: none;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        // transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        @include mobile{
+            max-width: 378px;
+            width: 100%;
+        }
+    }
+}
+#inputPassword{
+    background: none;
+    padding: 0;
+}
+// ::placeholder{
+//     color: #fff;
+//     opacity: 0.2;
+// }
+.checkbox{
+    // width: 420px;
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    margin: 0 auto;
+    &--name{
+        
+            font-size: 12px;
+            color: #333;
+        
+    }
+    &--other{
+        margin: 0;
+    }
+    &-border{
+        // display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0 24px;
+        position: relative;
+        @include mobile{
+            margin: 0;
+            width: 100%;
+        }
+        &--line{
+            position: relative;
+            border: 0.1px solid #333;
+            width: 330px;
+            margin: 0 auto;
+            
+        }
+        &--text{
+            position: absolute;
+            top: 0;
+            right: 45%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            padding: 0 5px;
+        }
+    }
+    &-bottom {
+        @include mobile{
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 450px;
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+            color: #F1F1F3;
+            font-size: 18px;
+        }
+        max-width: 331px;
+        width: 100%;
+        background: #790000;
+        border-radius: 8px;
+        padding: 13px;
+        outline: none;
+        border: none;
+        color: #F1F1F3;
+        margin: 20px 23px;
+        font-size: 18px;
+        // margin-top: 20px;
+        // margin-left: 24px;
+        // text-align: center;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+    a{
+        color: #fff;
+        text-decoration: underline;
+        font-size: 12px;
+        @include mobile{
+            font-size: 3vmin;
+            margin: 0;    
+        }
+    }
+    p{
+        transform: translateY(7px);
+        margin-top: 0;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include mobile{
+            font-size: 3vmin;    
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 10px;
+
+        }
+    }
+    
+}
+.button-other{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    @include mobile{
+        gap: 0 20px;
+    }
+    button{
+        width: 154px;
+        height: 40px;
+        font-size: 18px;
+        font-style: normal;
+        // color: #fff;
+        @include mobile{
+            width: 100%;
+        }
+    }
+    &--fb{
+        @include mobile{
+            width: 100%;
+        }
+        button{
+            color: #fff;
+            background: #4867AA;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+    }
+    &--gg{
+        @include mobile{
+            width: 100%;
+        }
+        button{
+            color: #fff;
+            background: #E94235;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            margin-left: 22px;
+            @include mobile{
+                margin: 0;
+            }
+        }
+    }
+}
+.loginnow{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    a{
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #e32a00;
+    }
+}
+
+.eye_open{
+    /* display: none; */
+}
+.icon_eye_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.icon_eye{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.icon_eye_input input{
+    flex: 1;
+    outline: none;
+    border: none;
+}
+.icon_eye_input input::placeholder{
+    color: #B2B3BD;
+}
+.eye_open.active{
+    display: none;
+}
+.eye_close.active{
+    display: none;
+}
+//
+.btn-fail{
+    text-align: center;
+    
+}
+.input2{
+    width: 440px;
+    position: relative;
+    /* text-align: center; */
+    margin: 0 auto;
+    input{
+        width: 100%;
+    }
+}
+.input-image{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.input3{
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+    &-left{
+        position: relative;
+        &-image{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+    }
+    input{
+        width: 215px;
+    }
+}
+.input-all{
+    margin-top: 10px;
+}

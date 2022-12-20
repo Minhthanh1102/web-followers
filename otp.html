@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="link logo" />
+    <title>OTP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+<div class="loginform">
+    <div class="loginform-bg">
+      <img src="img/login/Rectangle 961.png" alt="">
+    </div>
+    <div class="header2">
+      <div class="header2-left">
+        <div class="header2-left-one header2-all">
+          <a href="index.html">Trang chủ</a>
+          <div class="header2-line"></div>
+        </div>
+        <div class="header2-left-one header2-all">
+          <a href="index.html">Về chúng tôi</a>
+          <div class="header2-line"></div>
+        </div>
+      </div>
+      <div class="header2-center">
+        <img src="img/login/logoat 1.svg" alt="">
+      </div>
+      <div class="header2-right">
+        <div class="header2-right-one header2-all">
+          <a href="index.html">Liên hệ</a>
+          <div class="header2-line"></div>
+        </div>
+        <div class="header2-right-one header2-all">
+          <a href="index.html">Đăng nhập/Đăng kí</a>
+          <div class="header2-linefull"></div>
+        </div>
+      </div>
+    </div>
+    <div class="overview">
+      <div class="overview-bg">
+        <img src="img/login/Rectangle 962.png" alt="">
+      </div>
+      <label class="form">
+          <div class="form_head">
+              <h3 class="form_title">MÃ OTP</h3>
+          </div>
+
+          <div class="otp">
+            <div class="otp-form">
+                <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" placeholder="." />
+                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" placeholder="."/>
+                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" placeholder="."/>
+                    <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" placeholder="."/>
+                    <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" placeholder="."/>
+                    <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" placeholder="."/>
+                </form>
+            </div>
+            <a href="retype.html">
+              <div class="otp-btn">
+                <button type="submit" id="btn_submit" class="checkbox-bottom hidden">XÁC NHẬN</button>
+              </div>
+            </a>
+            <div class="resend">
+                <a href="">Gửi lại mã</a>
+            </div>
+        </div>
+        <div class="form-contact">
+            <div class="form-contact-icon"><span>Facebook</span></div>
+            <div class="form-contact-icon"><span>Zalo</span></div>
+            <div class="form-contact-icon"><span>Shopee</span></div>
+            <div class="form-contact-icon"><span>Instagram</span></div>
+          </div>
+      </label>
+  </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/hide.js"></script>
+<script src="js/totop.js"></script>
+    <script src="js/otp.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

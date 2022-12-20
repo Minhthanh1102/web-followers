@@ -1,8 +1,24 @@
 .footer {
-    background-color: #000;
+    position: relative;
+    background: rgba(28, 28, 28, 0.5);
+
+    &-banner{
+        img{
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+    }
     &-text{
         display: flex;
         justify-content: space-between;
+        padding-right: 20px;
+        ul{
+            list-style: none;
+            span{
+                font-size: 14px;
+            }
+        }
     }
     &-logo{
         text-align: center;
