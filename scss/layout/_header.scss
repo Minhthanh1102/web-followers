@@ -1,13 +1,59 @@
 .header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: flex-end;
     padding: 20px 35px;
     background-color: #fff;
-    &-left{
+    &-center{
+        img{
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+    &-line{
+        border: 0.5px solid #b7b6b6;
+        top: 50%;
+        transform: translateY(75px);
+    }
+    &-middle{
+        position: relative;
+        padding: 2px 10px;
+        border: 1px solid #b7b6b6;
+        border-radius: 11px;
+                // display: flex;
+                align-items: center;
+                img{
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    transform: translateY(-50%);
+                }
+                input{
+                    // width: 100%;
+                    width: 320px;
+                    padding: 5px;
+                    border: none;
+                    outline: none;
+                    // transform: translateY(-25%);
+                }
+    }
+    &-bot{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+    &-top{
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        height: 100px;
+    }
+    &-left{
+        display: flex;
+        // justify-content: space-between;
         gap: 0 50px;
         &-user{
             position: relative;
@@ -31,7 +77,7 @@
     }
     &-right{
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 0 50px;
         align-items: center;
         &-search{

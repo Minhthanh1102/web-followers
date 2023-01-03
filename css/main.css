@@ -695,14 +695,52 @@ html {
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
   padding: 20px 35px;
   background-color: #fff;
 }
-.header-left {
+.header-center img {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.header-line {
+  border: 0.5px solid #b7b6b6;
+  top: 50%;
+  transform: translateY(75px);
+}
+.header-middle {
+  position: relative;
+  padding: 2px 10px;
+  border: 1px solid #b7b6b6;
+  border-radius: 11px;
+  align-items: center;
+}
+.header-middle img {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.header-middle input {
+  width: 320px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.header-bot {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header-top {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  height: 100px;
+}
+.header-left {
+  display: flex;
   gap: 0 50px;
 }
 .header-left-user {
@@ -726,7 +764,6 @@ html {
 }
 .header-right {
   display: flex;
-  justify-content: space-between;
   gap: 0 50px;
   align-items: center;
 }
